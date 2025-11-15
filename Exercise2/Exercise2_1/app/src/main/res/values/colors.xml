@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_fd">#FD5D00</color>
+    <color name="orange_fd_pressed">#D74F00</color>
+    <color name="orange_fd_disabled">#FE8E4D</color>
+    <color name="orange_fd_stroke">#D74F00</color>
+    <color name="ripple_on_orange">#33FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="button_text">#FFFFFFFF</color>
+    <color name="outline_stroke">#C7C7C7</color>
+    <color name="background_light">#FFF6F3F0</color>
+    <color name="fb_blue">#3B5998</color>
+    <color name="google_red">#DB4437</color>
+    <color name="colorPrimary">#FD5D00</color>
+    <color name="colorPrimaryVariant">#D74F00</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorAccent">#FD5D00</color>
+    <color name="button_bg">#FFFFFF</color>
+</resources>

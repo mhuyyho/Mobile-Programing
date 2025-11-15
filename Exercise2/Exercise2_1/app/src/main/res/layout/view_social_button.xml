@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/social_button_root"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_rounded_stroke"
+        android:gravity="center_vertical|start"
+        android:paddingStart="16dp"
+        android:paddingEnd="56dp"
+        android:text="Social"
+        android:textColor="#1f425f"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/ivSocial"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:contentDescription="@null"
+        android:padding="6dp" />
+
+</FrameLayout>
