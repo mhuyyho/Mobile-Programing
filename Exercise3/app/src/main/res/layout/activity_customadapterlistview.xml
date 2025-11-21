@@ -1,47 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="12dp">
+    android:padding="8dp">
 
-    <EditText
-        android:id="@+id/et_value"
-        android:layout_width="0dp"
+    <!-- Include container (ẩn lúc đầu) -->
+    <FrameLayout
+        android:id="@+id/include_container"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập tên"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:visibility="gone"
+        android:layout_marginBottom="8dp" />
 
+    <!-- ListView -->
     <ListView
         android:id="@+id/lv"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp"
-        app:layout_constraintTop_toBottomOf="@id/et_value"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/button_bar"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:clipToPadding="false"/>
+        android:layout_weight="1"
+        android:dividerHeight="8dp" />
 
+    <!-- các nút điều khiển -->
     <LinearLayout
-        android:id="@+id/button_bar"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="12dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
 
         <Button
             android:id="@+id/bt_add"
@@ -49,35 +35,34 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Add"
-            android:textSize="14sp"
-            android:layout_margin="6dp"/>
-
-        <Button
-            android:id="@+id/bt_remove"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Remove"
-            android:textSize="14sp"
-            android:layout_margin="6dp"/>
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/bt_update"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
             android:layout_weight="1"
             android:text="Update"
-            android:textSize="14sp"
-            android:layout_margin="6dp"/>
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/bt_remove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="Remove"
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/bt_back"
             android:layout_width="0dp"
+            android:layout_marginStart="4dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Back"
-            android:textSize="14sp"
-            android:layout_margin="6dp"/>
+            android:textSize="10sp" />
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
