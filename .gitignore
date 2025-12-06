@@ -1,0 +1,75 @@
+# =========================
+# Android / Gradle ignore
+# =========================
+
+*.iml
+.gradle/
+local.properties
+/build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Gradle cache
+.gradle/
+*/build/
+!gradle-wrapper.jar
+
+# IntelliJ/Android Studio
+.idea/
+*.iws
+*.ipr
+*.iml
+
+# Keystore (cực quan trọng tránh leak)
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# ndk / cmake
+obj/
+*.so
+
+# Generated files
+generated/
+output.json
+
+# APK / AAB / artifacts
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Signing files
+signing.properties
+key.properties
+
+# Ignore Navigation editor temp
+.navigation/
+
+# Crashlytics / firebase
+fabric.properties
+crashlytics-build.properties
+
+# Local gradle info
+gradle-app.setting
+gradle-app.properties
+
+# Kotlin specific
+*.kotlin_module
+
+# Android Profiling
+*.hprof
+
+# =========================
+# Jetpack Compose
+# =========================
+compose-cache/
